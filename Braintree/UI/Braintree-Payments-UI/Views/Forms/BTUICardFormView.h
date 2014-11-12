@@ -1,4 +1,6 @@
 #import "BTUIThemedView.h"
+#import "BTUICardNumberField.h"
+#import "BTUICardExpiryField.h"
 
 typedef NS_OPTIONS(NSUInteger, BTUICardFormOptionalFields) {
     BTUICardFormOptionalFieldsNone       = 0,
@@ -20,6 +22,8 @@ typedef NS_ENUM(NSUInteger, BTUICardFormField) {
 
 @property (nonatomic, weak) IBOutlet id<BTUICardFormViewDelegate> delegate;
 
+@property (nonatomic, strong) BTUICardNumberField *numberField;
+@property (nonatomic, strong) BTUICardExpiryField *expiryField;
 @property (nonatomic, assign, readonly) BOOL valid;
 @property (nonatomic, copy, readonly) NSString *number;
 @property (nonatomic, copy, readonly) NSString *cvv;

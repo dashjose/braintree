@@ -6,7 +6,7 @@
 - (void)drawArt {
 
     //// Color Declarations
-    UIColor* color2 = [UIColor colorWithRed: 0 green: 0 blue: 0 alpha: 0.099];
+    UIColor* color2 = [UIColor whiteColor];
     UIColor* color1 = self.highlightColor ?: color2;
 
     //// Page-1

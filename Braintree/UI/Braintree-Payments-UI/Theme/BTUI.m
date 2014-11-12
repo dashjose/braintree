@@ -56,7 +56,8 @@
 }
 
 - (UIColor *)textFieldTextColor {
-    return [UIColor bt_colorWithBytesR:26 G:26 B:26];
+    return [UIColor whiteColor];
+    // return [UIColor bt_colorWithBytesR:26 G:26 B:26];
 }
 
 - (UIColor *)textFieldPlaceholderColor {
@@ -76,7 +77,8 @@
 }
 
 - (UIColor *)cardHintBorderColor {
-    return [UIColor bt_colorWithBytesR:0 G:0 B:0 A:20];
+    return [UIColor whiteColor];
+    //return [UIColor bt_colorWithBytesR:0 G:0 B:0 A:20];
 }
 
 - (UIColor *)errorBackgroundColor {

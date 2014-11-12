@@ -1,6 +1,4 @@
 #import "BTUICardFormView.h"
-#import "BTUICardNumberField.h"
-#import "BTUICardExpiryField.h"
 #import "BTUICardCvvField.h"
 #import "BTUICardPostalCodeField.h"
 #import "BTUI.h"
@@ -9,8 +7,6 @@
 
 @interface BTUICardFormView ()<BTUIFormFieldDelegate>
 
-@property (nonatomic, strong) BTUICardNumberField *numberField;
-@property (nonatomic, strong) BTUICardExpiryField *expiryField;
 @property (nonatomic, strong) BTUICardCvvField *cvvField;
 @property (nonatomic, strong) BTUICardPostalCodeField *postalCodeField;
 
@@ -131,7 +127,7 @@
     self.postalCodeField.translatesAutoresizingMaskIntoConstraints = NO;
     self.postalCodeField.delegate = self;
     [self addSubview:self.postalCodeField];
-    [self setAlphaNumericPostalCode:YES];
+    [self setAlphaNumericPostalCode:NO];
 
     self.vibrate = YES;
     self.optionalFields = BTUICardFormOptionalFieldsAll;
